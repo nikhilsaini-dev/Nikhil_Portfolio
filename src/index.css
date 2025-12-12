@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Mozilla+Headline:wght@200..700&family=Playwrite+AU+QLD:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+@import "tailwindcss";
+
+* {
+  font-family: Saira, sans-serif;
+
+}
+
+body {
+  background: #1a1a1a;
+  color: #f8fafc;
+}
+
+
+@theme {
+  --color-dark-100: #1a1a1a;
+  --color-dark-200: #1f1f1f;
+  --color-dark-300: #2d2d2d;
+  --color-dark-400: #3d3d3d;
+  --color-purple: #8B5CF6;
+  --color-pink: #EC4899;
+  --color-dark-500: #3B82F6;
+  --color-Sulu: #9FE870;
+  --color-DeepFir: #163300;
+  --color-BrightSun: #FCDB32;
+  --color-Turquoise: #34E0A1;
+  --color-skyblue: #347ec9;
+
+
+
+
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid  #34E0A1;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 3s steps(20, end) forwards, blink-caret 0.75s step-end 4;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 16ch;
+  }
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color:#34E0A1 ;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <nav className='fixed w-full z-50  bg-dark-100/90 backdrop-blur-sm py-4 px-8 shadow-lg'>
+      <div className='container mx-auto flex justify-between items-center'>
+        <div>
+          <a href="#" className='text-3xl font-bold text-white'>
+            Nikhil  
+            <span className='text-Turquoise' > Saini</span>
+           <div className='w-4 h-4 bg-Turquoise rounded-full'></div>
+          </a>
+        </div>
+      </div>
+    </nav> */
