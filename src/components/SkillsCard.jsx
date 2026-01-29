@@ -8,25 +8,25 @@ const SkillsCard = () => {
       icon: FaReact,
       description:
         "Building responsive and interactive user interfaces with modern frameworks.",
-      tags: ["React", "Angular", "TypeScript"],
+      tags: [ "React", "TailwindCss"],
     },
     {
       title: "Backend Development",
       icon: FaServer,
       description: "Creating robust server-side applications and RESTful APIs",
-      tags: ["Node.js", "Express", "Django", "Laravel"],
+      tags: ["Node.js", "Express.js"],
     },
     {
       title: "Database Management",
       icon: FaDatabase,
       description: "Designing and optimizing databases for performance and .",
-      tags: ["MongoDb", "MySQL", "Firebase"],
+      tags: ["MongoDb", "Firebase"],
     },
-     {
+    {
       title: "Tools & Technologies",
       icon: FaTools,
       description: "Designing and optimizing databases for performance and .",
-      tags: ["Git & GitHub"],
+      tags: ["Git & GitHub", "Postman", "Thunder Client"],
     },
   ];
 
@@ -42,17 +42,22 @@ const SkillsCard = () => {
             <div className="flex items-center mb-4">
               <Icon className="text-Turquoise w-12 h-12 mr-6" />
               <h3 className="text-xl font-semibold text-white mb-2">
-                {skills.title}              
-              </h3> 
+                {skills.title}
+              </h3>
             </div>
 
-             <p className="text-gray-400 mb-4"> {skills.description}</p>
+            <p className="text-gray-400 mb-4"> {skills.description}</p>
 
-             <div className="flex flex-wrap gap-2">
-             {skills.tags.map((tech)=>(
-              <span key={tech} className="px-3 py-1 bg-dark-400 rounded-full text-sm">{tech}</span>
-             ))}
-             </div>
+            <div className="flex flex-wrap gap-2">
+              {skills.tags.map((tech) => (
+                <span
+                  key={tech}
+                  className="px-3 py-1 bg-dark-400 rounded-full text-sm"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
           </div>
         );
       })}
